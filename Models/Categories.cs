@@ -6,7 +6,7 @@ namespace Bangazon.Models
     {
         public int Id { get; set; }
         [Required]
-        public string Title { get; set; }
-        public List<Products> Products { get; set; }
+        public string? Title { get; set; }
+        public List<Products>? Products { get; set; }
     }
 }
