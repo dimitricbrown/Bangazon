@@ -7,8 +7,8 @@ namespace Bangazon.Models
         public int Id { get; set; }
         [Required]
         public int OrderId { get; set; }
-        public Orders Order { get; set; }
+        public Orders? Order { get; set; }
         public int ProductId { get; set; }
-        public Products Product { get; set; }
+        public Products? Product { get; set; }
     }
 }

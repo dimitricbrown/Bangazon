@@ -116,9 +116,6 @@ namespace Bangazon
             new OrderPayments {Id = 2, OrderId = 1, PaymentTypeId = 1, PaymentAmount = 35.00M},
             new OrderPayments {Id = 3, OrderId = 2, PaymentTypeId = 3, PaymentAmount = 165.00M},
             });
-
         }
-
-
     }
 }

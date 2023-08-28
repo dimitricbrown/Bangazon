@@ -33,4 +33,40 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Getting all users
+app.MapGet("/api/users", (BangazonDbContext db) =>
+{
+    return db.Users.ToList();
+});
+
+// Getting all product categories
+app.MapGet("/api/categories", (BangazonDbContext db) =>
+{
+    return db.Categories.ToList();
+});
+
+// Getting all products
+app.MapGet("/api/products", (BangazonDbContext db) =>
+{
+    return db.Products.ToList();
+});
+
+// Getting all orders
+app.MapGet("/api/orders", (BangazonDbContext db) =>
+{
+    return db.Orders.ToList();
+});
+
+// Getting all order payment types
+app.MapGet("/api/payments", (BangazonDbContext db) =>
+{
+    return db.PaymentTypes.ToList();
+});
+
+// Getting all order statuses
+app.MapGet("/api/statuses", (BangazonDbContext db) =>
+{
+    return db.OrderStatusTypes.ToList();
+});
+
 app.Run();
